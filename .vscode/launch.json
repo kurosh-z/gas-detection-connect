@@ -1,0 +1,20 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch localhost chrome",
+      "type": "chrome",
+      "request": "launch",
+      // "reAttach": true,
+      "runtimeExecutable": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+      "url": "http://localhost:4200",
+      "webRoot": "${workspaceFolder}",
+      "sourceMapPathOverrides": {
+        "../*": "${webRoot}/*"
+      }
+    }
+  ]
+}

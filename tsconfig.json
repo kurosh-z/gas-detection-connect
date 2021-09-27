@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noImplicitAny": false,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "types": ["@emotion/react/types/css-prop"]
+  },
+
+  "max-line-length": [
+    true,
+    {
+      "limit": 120,
+      "ignore-pattern": "^import |^export {(.*?)}",
+      "check-strings": true,
+      "check-regex": true
+    }
+  ],
+  "include": ["src"]
+}
