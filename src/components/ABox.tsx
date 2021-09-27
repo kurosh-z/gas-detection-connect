@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from "@emotion/react";
-import { Box, BoxProps } from "@material-ui/core";
+import { Box, BoxProps } from "@mui/material";
 
 import { animated } from "@react-spring/web";
 

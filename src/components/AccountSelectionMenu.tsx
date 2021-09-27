@@ -2,9 +2,9 @@
 /** @jsx jsx */
 import { jsx, css as emoCss } from "@emotion/react";
 import { useState, useCallback, Fragment, useEffect } from "react";
-import { Typography, IconButton, Tooltip, Button } from "@material-ui/core";
-import { useTheme } from "@material-ui/core/styles";
-import { PeopleAlt } from "@material-ui/icons";
+import { Typography, IconButton, Tooltip, Button } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import { PeopleAlt } from "@mui/icons-material";
 import localforage from "localforage";
 import {
   useTransition,
@@ -16,7 +16,7 @@ import {
 } from "@react-spring/web";
 import { ABox } from "./ABox";
 
-import { ACCOUNTS, CurrentAccountType, Session } from "../utils/Session";
+import { ACCOUNTS, CurrentAccountType } from "../utils/Session";
 
 const ATypography = a(Typography);
 export const AccountBtn: React.FC<
@@ -119,6 +119,7 @@ export const AccountSelectionMenu: React.FC<{
   >;
 }> = ({ setOpen, open, handle_form }) => {
   const theme = useTheme();
+
   const menuStyle = emoCss({
     width: "100vw",
     height: "100vh",

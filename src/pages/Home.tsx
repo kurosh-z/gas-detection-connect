@@ -4,14 +4,14 @@ import { jsx, css as emoCss } from "@emotion/react";
 
 import { useState, useCallback, forwardRef, useEffect, useRef } from "react";
 import { useTransition, animated, useSpring, config } from "@react-spring/web";
-import { styled } from "@material-ui/styles";
-import Button, { ButtonProps } from "@material-ui/core/Button";
+import { styled } from "@mui/styles";
+import Button, { ButtonProps } from "@mui/material/Button";
 import { Session, CurrentAccountType } from "../utils/Session";
 import { Menu } from "../components/Menu";
 import { AccountSelectionMenu } from "../components/AccountSelectionMenu";
-import Snackbar from "@material-ui/core/Snackbar";
-import MuiAlert, { AlertProps } from "@material-ui/core/Alert";
-import Stack from "@material-ui/core/Stack";
+import Snackbar from "@mui/material/Snackbar";
+import MuiAlert, { AlertProps } from "@mui/material/Alert";
+import Stack from "@mui/material/Stack";
 import localforage from "localforage";
 
 const Alert = forwardRef<HTMLDivElement, AlertProps>(function Alert(

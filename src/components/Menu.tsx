@@ -12,9 +12,9 @@ import {
   Tooltip,
   Button,
   BoxProps,
-} from "@material-ui/core";
-import { useTheme } from "@material-ui/core/styles";
-import { AddCircleOutline, DeleteOutlineOutlined } from "@material-ui/icons";
+} from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import { AddCircleOutline, DeleteOutlineOutlined } from "@mui/icons-material";
 import {
   useTransition,
   useSpring,
